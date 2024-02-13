@@ -1,0 +1,32 @@
+.cart__item {
+    display: flex;
+    gap: 1rem;
+    &--img {
+        object-fit: cover;
+        height: 100%;
+        aspect-ratio: 1;
+    }
+    &--details {
+        .cart__item--title {
+            margin-top: 0;
+        }
+        .quantity-control-btns {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            .qc-btn {
+                select {
+                    padding: 0.2rem 0.5rem;
+                    background: transparent;
+                    border: 0.5px solid rgba(0, 0, 0, 0.486);
+                    border-radius: 0.25rem;
+                }
+            }
+            .removeButton {
+                padding: 0.2rem 0.5rem;
+                background-color: rgba($color: grey, $alpha: 0.5);
+            }
+        }
+    }
+    margin-block: 0.85rem;
+}
